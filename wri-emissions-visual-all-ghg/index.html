@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>WRI Emissions Visual (All GHG)</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Testbubs</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Bubble Chart v4 - vallandingham.me</title>
+  <meta name="description" content="Using D3v4 to create a Bubble chart. Based on NYT visualization">
+  <meta name="author" content="Jim Vallandingham">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/bubble_chart.css">
+</head>
+<body>
+  <div class="container">
+  <div class="row">
+
+     
+<div class="col-md-8 col-sm-push-4">
+  <div class="viz_container">
+         
+
+   <div id="total_container"></div>
+     <div id="tooltip_contain"></div>
+      <svg id="vis" viewBox="0 0 1200 1000" preserveAspectRatio="xMinYMin slice" width="100%" height="100%" style="width: 100%; overflow: hidden; max-width: 800px;"> </svg>
+    </div>
+     
+       </div>
+ 
+    <div class="descriptor col-md-4 col-sm-pull-8">
+      
+  <h2>Explore The World's Emissions</h2>
+  <p>Each bubble represents one country (and two representing the European Union) and the amount of Green house gases emitted in the given year. Explore how countries and when countries, going all the way back to 1850.</p>
+      <p id="yearMenu" class="">Year</br>Historical emissions (before 1990) press CO2</p>
+          <p id="countryMenu" class="">Country
+    </p>
+
+      <p id="energyMenu" class="">Emissions by Sector and Sub-Sector</br>1990-2013<select class="form-control" id="energySelection">
+    <option value="all">All</option>
+        <option disabled="disabled">----Emissions by Sector----</option>
+        <option value="energy">Energy</option>
+        <option value="industrial">Industrial Processes</option>
+        <option value="agriculture">Agriculture</option>
+        <option value="waste">Waste</option>
+     <option disabled="disabled">----Emissions by Energy Sub-Sector----</option>
+        <option value="electric">Electricity/Heat</option>
+        <option value="manufract">Manufacturing/Construction</option>
+        <option value="transport">Transportation</option>
+        <option value="other">Other Fuel Combustion</option>
+        <option value="fugitive">Fugitive Emissions</option>
+        </select></p>
+      <div class="button_container">
+        <button id="co2" onclick="co2Function()">CO2</br>Emissions Unavailable</button>
+    <button id="GHG">All GHG</br>Historic Emissions Unavailable</button>
+        </div>
+    <p>Data is for GHG emissions excluding land-use change and forestry and excluding bunker fuels. The EU is considered an emitter for this graph. For more information visit our WRI blog.</p>
+
+  </div>
+    </div>
+  <script src="//d3js.org/d3.v4.min.js"></script>
+  <script src="src/tooltip.js"></script>
+  <script src="src/bubble_chart.js"></script>
+
+
+</body>
+</html>
+  <script src='https://d3js.org/d3.v4.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
+  
+    <script  src="js/index.js"></script>
+
+</body>
+</html>
