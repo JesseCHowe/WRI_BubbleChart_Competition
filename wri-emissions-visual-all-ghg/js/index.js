@@ -176,7 +176,7 @@ function bubbleChart() {
         .transition()
         .duration(500)
         .style("fill", "#C68EFF");
- 
+
       }else{
               d3
         .selectAll(".energy")
@@ -395,8 +395,8 @@ function bubbleChart() {
         d3.selectAll(".bubble2").attr("pointer-events", "none");
         //d3.selectAll(".bubble").attr("pointer-events", "null");
         bubbles2.on("mouseover", showDetailall).style("opacity", 0);
-        
-        
+
+
         $("option[class=noghg]").prop("disabled", false);
         var energytestone = $("#energySelection").val();
         var totalghgValue = "totalGHG" + testone;
@@ -708,7 +708,7 @@ function bubbleChart() {
       return -Math.pow(d[testone], 2.0) * forceStrength;
     }
     }
-    
+
     var simulation2 = d3
       .forceSimulation()
       .velocityDecay(0.2)
@@ -1608,7 +1608,7 @@ function bubbleChart() {
     /*.on("click",function(){
                     //select new data
                     if (dataIndex==1) {
-                        dataIndex=2;  
+                        dataIndex=2;
                     } else   {
                         dataIndex=1;
                     }
@@ -2422,8 +2422,8 @@ function bubbleChart() {
       ';">' +
       addCommas(d[totalGHG]) +
       " MtC02e</p></div>";
- 
-    
+
+
     tooltip.showTooltip(content, d3.event);
   }
   function showDetail3(d) {
@@ -2437,7 +2437,7 @@ function bubbleChart() {
            d3.select(this).style("fill", d3.rgb(fillColor(d.status)).darker());
                  d3
         .selectAll("#" + selectedCountry)
-        .style("fill", "orange");      
+        .style("fill", "orange");
     }
   }
 
@@ -2606,7 +2606,7 @@ function bubbleChart() {
    */
   function hideDetail(d) {
     // reset outline
-    
+
         var selectedCountry = $("#countrySelection").val();
      var energySelect = $("#energySelection").val();
     if(energySelect == "all"){
@@ -2629,7 +2629,7 @@ function bubbleChart() {
         .style("fill", "orange");
     }
     tooltip.hideTooltip();
-    
+
   }
   function hideDetail3(d) {
     var selectedCountry = $("#countrySelection").val();
@@ -2657,10 +2657,10 @@ function bubbleChart() {
               d3
         .selectAll("#" + selectedCountry+"energy")
         .style("fill", "orange");
-  }   
+  }
     }
   }
-  
+
   /*
    * Externally accessible function (this is attached to the
    * returned chart function). Allows the visualization to toggle
@@ -2748,7 +2748,7 @@ function addCommas(nStr) {
 var columns = null;
 // Load the data.
 d3.csv(
-  "https://gist.githubusercontent.com/JesseCHowe/4f8c697fc25b7e05590a4f4dd25ee359/raw/9ee8cea105f35be73fbe1151fe3ac4ab90cd658a/emissionsTest3.csv",
+  "https://raw.githubusercontent.com/JesseCHowe/WRI_BubbleChart_Competition/master/wri-emissions-visual-all-ghg/emissionsTest.csv",
   display
 );
 
